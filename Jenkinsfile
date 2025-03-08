@@ -25,8 +25,8 @@ pipeline{
         stage('Push Docker Images to Docker Hub'){
             steps{
                 sh 'docker login -u $DOCKER_HUB_CREDENTIALS_USR -p $DOCKER_HUB_CREDENTIALS_PSW'
-                sh 'docker tag todo-application-image:latest prathamesh_k/todo-application:latest'
-                sh 'docker push prathamesh_k/todo-application:latest'
+                sh 'docker tag todo-application-image:latest prathamesh24/todo-application:latest'
+                sh 'docker push prathamesh24/todo-application:latest'
             }
         }
 
